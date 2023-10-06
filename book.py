@@ -34,7 +34,7 @@ favoriteRoom = WebDriverWait(driver, 10).until(ec.element_to_be_clickable(favori
 favoriteRoom.click()
 time.sleep(10)
 
-room = driver.find_element(By.ID, '//*[@id="book-grid-container"]/div[2]/div/div[1]/div[3]/div[1]/a[1]/i')
+room = driver.find_element(By.CSS_SELECTOR, 'i.book-action-icon.book-add-to-cart.fa.fa-plus-circle')
 room.click()
 
 popRoom_locator = driver.find_element(By.ID, 'setup--add-modal-save')
