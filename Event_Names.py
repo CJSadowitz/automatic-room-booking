@@ -1,4 +1,3 @@
-# Cursed Text?
 import random
 
 eventNames = [
