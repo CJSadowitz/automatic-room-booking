@@ -8,7 +8,7 @@ import time
 # Make an object of class webdriver.Chrome
 driver = webdriver.Chrome()
 # Load the desired website
-driver.get('https://events.floridapoly.edu/EmsWebApp/Default.aspx')
+driver.get('https://xxxx.com')
 
 # Find and input user ID
 userID = driver.find_element(By.ID, 'userID_input')
@@ -52,7 +52,7 @@ eventName.send_keys(eventNames[a])
 
 # Find and click Phone number
 phone = driver.find_element(By.ID, '1stContactPhone1')
-phone.send_keys('8638748540')
+phone.send_keys('xxx-xxx-xxxx')
 
 # Find and click Create Reservation
 reservation = driver.find_element(By.XPATH, '//*[@id="details"]/div[3]/div/span[2]/button')  # find actual ID
