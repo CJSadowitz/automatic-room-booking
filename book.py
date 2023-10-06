@@ -31,6 +31,7 @@ specificRoom.click()
 
 favoriteRoom_locator = driver.find_element(By.ID, 'favorites-only-chk')
 favoriteRoom = WebDriverWait(driver, 10).until(ec.element_to_be_clickable(favoriteRoom_locator))
+time.sleep(5)
 favoriteRoom.click()
 time.sleep(10)
 
@@ -40,6 +41,8 @@ room.click()
 popRoom_locator = driver.find_element(By.ID, 'setup--add-modal-save')
 popRoom = WebDriverWait(driver, 10).until(ec.element_to_be_clickable(popRoom_locator))
 popRoom.click()
+alert = WebDriverWait(driver, 10).until(ec.alert_is_present())
+alert.accept()
 
 add_room_locator = (By.ID, 'next-step-btn')
 driver.execute_script("window.scrollTo(0, arguments[0].offsetTop);", add_room_locator)
