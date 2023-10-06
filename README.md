@@ -2,7 +2,9 @@
 
 ## Description
 
-The purpose of this project is to book a room.
+The purpose of this project is to automatically book a room,
+
+using webscrapping with python.
 
 ## Table of Contents
 
@@ -17,8 +19,11 @@ Selenium, Chrome based WebDriver.
 
 ## Usage
 Template on EMS website:
+
 Specified Time
-One favorite room
+
+One favorited room
+
 book.py automatically logins into the website with a specified account, and books a room based on the users template.
 
 ## Contributing
