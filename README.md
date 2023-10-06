@@ -26,3 +26,4 @@ Place-holder
 
 ## License
 
+This project is liscensed under GNU [LICENSE](LICENSE)
